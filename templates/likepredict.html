@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Predictor</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+        
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff005b;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        select, input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff005b;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff3366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Like Predictor</h1>
+        <form action="/predictor" method="post">
+            <label for="genre">Select a Genre:</label>
+            <select id="genre" name="genre" required>
+                <option value="" disabled selected>Select a genre</option>
+                <option value="0">Autos & Vehicles</option>
+                <option value="1">Comedy</option>
+                <option value="2">Education</option>
+                <option value="3">Entertainment</option>
+                <option value="4">Film & Animation</option>
+                <option value="5">Gaming</option>
+                <option value="6">Howto & Style</option>
+                <option value="7">Music</option>
+                <option value="8">News & Politics</option>
+                <option value="9">Nonprofits & Activism</option>
+                <option value="10">People & Blogs</option>
+                <option value="11">Pets & Animals</option>
+                <option value="12">Science & Technology</option>
+                <option value="13">Shows</option>
+                <option value="14">Sports</option>
+                <option value="15">Travel & Events</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

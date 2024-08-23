@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Like Predictor</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff005b;
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #2c2c2c, #121212);
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #2c2c2c, #121212); }
+            50% { background: linear-gradient(135deg, #3c3c3c, #1a1a1a); }
+            100% { background: linear-gradient(135deg, #2c2c2c, #121212); }
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #ff005b;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: textGlow 1.5s ease-in-out infinite;
+        }
+
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 5px #ff005b, 0 0 10px #ff005b, 0 0 15px #ff005b; }
+            50% { text-shadow: 0 0 20px #ff005b, 0 0 30px #ff005b, 0 0 40px #ff005b; }
+            100% { text-shadow: 0 0 5px #ff005b, 0 0 10px #ff005b, 0 0 15px #ff005b; }
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #b3b3b3;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #ff005b;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 15px rgba(255, 0, 91, 0.3);
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(255, 0, 91, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c1c1c;
+            padding: 15px 20px;
+            text-align: center;
+            color: #b3b3b3;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="YouTube Analytics">YouTube Analytics</a></li>
+                <li><a href="predictor">Like Predictor</a></li>
+                <li><a href="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>YouTube Like Predictor</h1>
+        <p>Analyze, Predict, and Engage with Your Audience</p>
+        <div class="buttons">
+            <a href="YouTube Analytics" class="button">YouTube Analytics</a>
+            <a href="predictor" class="button">Like Predictor</a>
+            <a href="contact" class="button">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 YouTube Analysis Project. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
